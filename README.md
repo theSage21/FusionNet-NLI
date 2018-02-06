@@ -22,7 +22,8 @@ or
 
 Quick Start
 -----------
-`pip install -r requirements.txt`  
+`pipenv install`  
+`pipenv install  http://download.pytorch.org/whl/cpu/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl` depending on what torch you need.
 `bash download.sh`  
 `python prepro.py`  
 `python train.py`  
