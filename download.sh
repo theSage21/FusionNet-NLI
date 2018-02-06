@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # Download MultiNLI
-wget http://www.nyu.edu/projects/bowman/multinli/multinli_1.0.zip
-unzip -a multinli_1.0.zip
-rm -f multinli_1.0.zip
+test -e multinli_1.0.zip || wget http://www.nyu.edu/projects/bowman/multinli/multinli_1.0.zip
+test -d multinli_1.0 || unzip -a multinli_1.0.zip
+# rm -f multinli_1.0.zip
 
 # Download GloVe
-mkdir -p glove
-wget http://nlp.stanford.edu/data/glove.840B.300d.zip -O glove/glove.840B.300d.zip
+test -d glove ||  mkdir -p glove
+test -e glove/glove.840B.300d.zip || wget http://nlp.stanford.edu/data/glove.840B.300d.zip -O glove/glove.840B.300d.zip
 unzip glove/glove.840B.300d.zip -d glove
 
 # Download CoVe

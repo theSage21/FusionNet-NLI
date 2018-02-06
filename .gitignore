@@ -1,0 +1,6 @@
+__MACOSX/
+glove/
+multinli_1.0.zip
+multinli_1.0/
+__pycache__/
+*pyc
