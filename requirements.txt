@@ -1,4 +1,0 @@
-numpy
-msgpack-python
-spacy
-jsonlines
